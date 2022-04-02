@@ -1,17 +1,17 @@
-import {useEffect, useState} from 'react'
 import type { NextPage } from 'next'
-import Head from 'next/head'
-import Image from 'next/image'
-import styles from '../styles/Home.module.css'
-import axios from 'axios'
-import Navbar from '../components/Navbar'
+import Layout from '../components/layout/Layout'
+import PageContainer from '../components/layout/Container'
 
 const Home: NextPage = () => {  
   
   return (
-    <div className={styles.container}>
-      <Navbar />
-    </div>
+    <>
+      <Layout>
+        <PageContainer>
+          <p>Hello Next.js</p>
+        </PageContainer>
+      </Layout>
+    </>
   )
 }
 
